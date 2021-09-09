@@ -1,0 +1,11 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+packaged/rest_helper/__init__.py
+packaged/rest_helper/rest_helper.py
+packaged/rest_helper.egg-info/PKG-INFO
+packaged/rest_helper.egg-info/SOURCES.txt
+packaged/rest_helper.egg-info/dependency_links.txt
+packaged/rest_helper.egg-info/top_level.txt
+test/test_rest_helper.py

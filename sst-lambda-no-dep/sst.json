@@ -1,0 +1,6 @@
+{
+  "name": "sst-lambda-no-dep",
+  "stage": "dev",
+  "region": "us-west-2",
+  "lint": true
+}
