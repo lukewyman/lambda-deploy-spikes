@@ -1,4 +1,4 @@
-from rest_heler.rest_helper import post
+from rest_helper.rest_helper import post
 
 def handler(event, context):
     response = post('https://httpbin.org/post', {'key':'value'})
