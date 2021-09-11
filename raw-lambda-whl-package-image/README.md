@@ -26,7 +26,7 @@ This spike explores deploying a Lambda that imports Python modules written separ
 - The Lambders are `poster.py` and `getter.py` in the `functions` folder. The `requests` library functionality of `POST` and `GET` are in the `rest_helper` folder in `packaged`. `pyproject.toml` and `setup.cfg` are for creating the package.
 - Running `pip install -e .` in the `src` directory installs an editable dependency in the virtual environment with a sim link so that dependent python code in my tests and lambdas always has the latest in real time. 
 - Running `python3 -m build` in `src` creates the wheel file in `dist`.
-- The `Dockerfile` contains commands to copy the `.whl` file from `dist` into the image and installs it (not necessary to involve pypi if used in the same repository). I tried parameterizing the Dockerfile with `ARG`s, but that flopped, so I need to tinker with that some more to make it reusable for any Lambda and wheel file(s) combination.
+- The `Dockerfile` contains commands to copy the `.whl` file from `dist` into the image and install it (not necessary to involve pypi if used in the same repository). I tried parameterizing the Dockerfile with `ARG`s, but that flopped, so I need to tinker with that some more to make it reusable for any Lambda and wheel file(s) combination.
 - This accomplishes:
   * the tests in test can access the package locally (with the sim link)
   * the lambda import statements work in vs code with dot notation as if using a pip installed package (with the sim link)

@@ -1,6 +1,6 @@
 ## Directly Deploying a Simple Lambda Function With No Dependencies
 
-This is a spike to explore deploying a simple Lambda, without any dependencies, as a zip file. The instructions below are derived from [the AWS instructions](https://docs.aws.amazon.com/lambda/latest/dg/python-package.html). Deployment uses the AWS CLI.
+As a first step, this spike explores deploying a simple Lambda, without any dependencies, as a zip file. The instructions below are derived from [the AWS instructions](https://docs.aws.amazon.com/lambda/latest/dg/python-package.html). Deployment uses the AWS CLI.
 
 ## Instructions
 

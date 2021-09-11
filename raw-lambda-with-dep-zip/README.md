@@ -1,5 +1,5 @@
 ## Directly Deploying a Simple Lambda Function With Dependencies
-
+Same as Spike 1, but this time adding the `requests` library as a dependency.
 
 1. Create and activate a Python environment at the same level as `src` and activate it:
 

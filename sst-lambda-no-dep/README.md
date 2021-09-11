@@ -1,6 +1,10 @@
-# Getting Started with Serverless Stack (SST)
+## Using Serverless Stack to deploy a simple Lambda Without Dependencies
 
 This project was bootstrapped with [Create Serverless Stack](https://docs.serverless-stack.com/packages/create-serverless-stack).
+
+
+
+## Instructions
 
 Start by installing the dependencies.
 
@@ -8,37 +12,20 @@ Start by installing the dependencies.
 $ npm install
 ```
 
-## Commands
+To test locally with Live Lambda, run:
+```
+npx sst start
+```
 
-### `npm run start`
+To deploy to your AWS account, run:
 
-Starts the local Lambda development environment.
+```
+npx sst deploy
+```
 
-### `npm run build`
+## Clean Up
 
-Build your app and synthesize your stacks.
-
-Generates a `.build/` directory with the compiled files and a `.build/cdk.out/` directory with the synthesized CloudFormation stacks.
-
-### `npm run deploy [stack]`
-
-Deploy all your stacks to AWS. Or optionally deploy, a specific stack.
-
-### `npm run remove [stack]`
-
-Remove all your stacks and all of their resources from AWS. Or optionally removes, a specific stack.
-
-### `npm run test`
-
-Runs your tests using Jest. Takes all the [Jest CLI options](https://jestjs.io/docs/en/cli).
-
-## Documentation
-
-Learn more about the Serverless Stack.
-- [Docs](https://docs.serverless-stack.com)
-- [@serverless-stack/cli](https://docs.serverless-stack.com/packages/cli)
-- [@serverless-stack/resources](https://docs.serverless-stack.com/packages/resources)
-
-## Community
-
-[Follow us on Twitter](https://twitter.com/ServerlessStack) or [post on our forums](https://discourse.serverless-stack.com).
+To remove from your AWS account after either `npx sst start` or `npx sst deploy`:
+```
+npx sst remove
+```
