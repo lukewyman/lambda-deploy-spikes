@@ -10,8 +10,8 @@ export default class MyStack extends sst.Stack {
         srcPath: "src",
         bundle: {
           installCommands: [
-            'pip install -r requirements.txt',
-            'pip install -i https://test.pypi.org/simple/ sst-lambda-wheel-libs==0.0.1'
+            'pip3 install -r requirements.txt',
+            'pip3 install -i https://test.pypi.org/simple/ sst-lambda-wheel-libs==0.0.1'
           ]
         }
       },

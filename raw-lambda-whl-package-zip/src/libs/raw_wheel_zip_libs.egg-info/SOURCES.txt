@@ -1,0 +1,10 @@
+LICENSE
+pyproject.toml
+setup.cfg
+libs/raw_wheel_zip_libs.egg-info/PKG-INFO
+libs/raw_wheel_zip_libs.egg-info/SOURCES.txt
+libs/raw_wheel_zip_libs.egg-info/dependency_links.txt
+libs/raw_wheel_zip_libs.egg-info/top_level.txt
+libs/rest_helper/__init__.py
+libs/rest_helper/rest_helper.py
+test/test_rest_helper.py
