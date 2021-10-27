@@ -1,6 +1,0 @@
-{
-  "name": "sst-lambda-whl-package",
-  "stage": "dev",
-  "region": "us-west-2",
-  "lint": true
-}
